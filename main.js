@@ -2,7 +2,7 @@ function submitForm(event){
     event.preventDefault();
     console.log("Clicked");
 
-    document.getElementById("result").innerHTML = `Il prezzo finale è di: ${calcolo()}`;
+    document.getElementById("result").innerHTML = `Il prezzo finale è di: ${calcolo()} &euro;`;
 }
 
 const listaCodiciSconto = ["YHDNU32", "JANJC63", "PWKCN25", "SJDPO96", "POCIE24"];
