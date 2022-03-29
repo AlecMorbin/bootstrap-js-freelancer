@@ -27,22 +27,26 @@ function calcolo(){
             break;
     }
 
-    let discount  = document.getElementById("discount").value;
+    let discount  = document.getElementById("discount");
 
-    let flag = false;
-    for (let i = 0; i < listaCodiciSconto.length; i++) {   
-        if (discount == listaCodiciSconto[i]) {
-            flag = true;
-            break;
+    if (discount.value.length > 0) {
+        
+        let flag = false;
+        for (let i = 0; i < listaCodiciSconto.length; i++) {   
+            if (discount.value == listaCodiciSconto[i]) {
+                flag = true;
+                break;
+            }
         }
-    }
 
-    if (flag == true) {
-        result = (result*75)/100;
+        if (flag == true) {
+            result = (result*75)/100;
+        }
+        else {
+            discount.style.color = "red";
+            alert("Il codice sconto non è valido");
+        }
+        
     }
-    else {
-        alert("Il codice sconto non è valido");
-    }
-
     return result.toFixed(2);
 }
