@@ -14,7 +14,7 @@
                 <span>Portfolio</span>
             </div>
             <div class="navbar-text">
-                <span>CONTACT US</span>
+                <span><ins>CONTACT ME</ins></span>
             </div>
     </div>
     <!-- End Navbar -->
@@ -25,9 +25,9 @@
             <h6>WEB DESINGER</h6>
     </div>
     <!-- End Profile -->
-    <main class="container text-center py-5">
+    <main class="container py-5">
         <h2>PORFTOLIO</h2>
-        <div class="row">
+        <div class="row text-center">
             <div class="col-4">
                 <div class="card">
                     <img src="img/portfolio/cabin.png" class="card-img-top" alt="Foto di una baita">
@@ -56,7 +56,7 @@
                 </div>
             </div>
         </div>
-        <div class="row py-5">
+        <div class="row py-5 text-center">
             <div class="col-4">
                 <div class="card">
                     <img src="img/portfolio/game.png" class="card-img-top" alt="Foto di un controller da gioco">
@@ -86,6 +86,31 @@
             </div>
         </div>
 
+        <div>
+            <h2 class="text-center">WANT AN OFFER?</h2>
+
+            <form id="form" onsubmit="">
+                <label for="nameF">First name</label>
+                <input type="text" name="First name" id="nameF">
+                <label for="nameL">Last name</label>
+                <input type="text" name="Last name" id="nameL">
+                <label for="email">Email address</label>
+                <input type="text" name="Email" id="email">
+                <label for="hours">Hours requested</label>
+                <input type="text" name="Hours" id="hours">
+                <label for="work">Type of work</label>
+                <select name="" id="work">
+                    <option value="backend">Backend Developer</option>
+                    <option value="frontend">Frontend Developer</option>
+                    <option value="analysis">Project Analysis</option>
+                </select>
+                <label for="discount">Discount Code</label>
+                <input type="text" name="discount" id="discount">
+                <label for="message">Message</label>
+                <input type="text" name="Message" id="message">
+            </form>
+            <h3 id="result">Ciao mimmo</h3>
+        </div>
     </main>
     <!-- Footer -->
     <footer class="footer mt-auto py-3 bg-dark text-muted text-center" style="font-size: 0.8em">
